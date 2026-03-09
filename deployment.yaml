@@ -16,7 +16,7 @@ containers:
 - name: html-demo
 image: godstr1k/html-demo:latest
 ports:
-- containerPort: 80
+- containerPort: 81
 ---
 apiVersion: v1
 kind: Service
@@ -27,6 +27,6 @@ type: NodePort
 selector:
 app: html-demo
 ports:
-- port: 80
-targetPort: 80
+- port: 81
+targetPort: 81
 nodePort: 30010
